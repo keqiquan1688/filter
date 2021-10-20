@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>濾鏡</title>
+    <style>
+        #p1{
+            font-size: -webkit-xxx-large;
+        }
+        
+        .img1{
+            /* 設定圖片尺寸與將圖片置中 */
+            width: 1280px;
+            height:720px;
+            display: block;
+            margin: 0 auto;
+            /* 濾鏡屬性 */
+            /* grayscale:灰階濾鏡 */
+            -webkit-filter:brightness(0);
+            transition: all 5s;
+        }
+        /* img:hover : 當滑鼠在圖片上時要做什麼 */
+        .img1:hover{
+            /* 將亮度提高到2 */
+            -webkit-filter:brightness(3);
+            /* transition 效果漸變的時間長度 */
+            transition: all 5s;
+        }
+
+        .img2{
+            width: 1280px;
+            height:720px;
+            display: block;
+            margin:  auto;
+            transition: all 1s ;
+
+        }
+        .img2:hover{
+            -webkit-filter: invert(1);
+            transition: all 1s ;
+        }
+
+        .img3{
+            width:1280px;
+            height:720px;
+            display: block;
+            margin: auto;
+            transition: all 5s;
+        }
+        .img3:hover{
+            -webkit-filter: contrast(2);
+            transition: all 5s;
+        }
+        .img4{
+            width:1280px;
+            height:720px;
+            display: block;
+            margin: auto ;
+            transition: all 4s;
+        }
+        .img4:hover{
+            
+            -webkit-filter: sepia(1);
+            transition: all 4s;
+        }
+        .img5{
+            width: 1280px;
+            height: 720px;
+            display: block;
+            margin: auto;
+            transition: all 3s;
+        }
+        .img5:hover{
+            /* blur() 除了輸入數值外還要加單位 px  */
+            -webkit-filter: blur(5px);
+            transition: all 3s;
+        }
+        .img6{
+            width: 1280px;
+            height: 720px;
+            display: block;
+            margin: auto;
+            transition: all 5s ;
+
+        }
+        .img6:hover{
+            -webkit-filter: saturate(5);
+            transition: all 5s ;
+        }
+        .img7{
+            width: 1280px;
+            height: 720px;
+            display: block;
+            margin: auto;
+            transition: all 5s ;
+        }
+        .img7:hover{
+            -webkit-filter: hue-rotate(310deg);
+            transition: all 5s ;
+        }
+        .img8{
+            width: 1280px;
+            height: 720px;
+            display: block;
+            margin: auto;
+            -webkit-filter:blur(30px) brightness(100) grayscale(1) contrast(100);
+            transition: all 5s;
+           
+            
+
+        }
+        .img8:hover{
+            -webkit-filter: blur(0px) brightness(1) grayscale(0) contrast(1);
+            transition: all 6s;
+            
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- id 對應的是 # id屬性只能使用一次 , class 能使用多次  -->
+    <!-- class 對應的就是 .img1 的. -->
+    <p id = "p1">將滑鼠輕碰圖片就可以看見濾鏡效果!</p>
+    <a href="#list1">1.濾鏡-亮度 </a> &#160<a href="#list2">2.濾鏡-反轉 </a>&#160 <a href="#list3">3.濾鏡-對比</a> &#160<a href="#list4">4.濾鏡-對比舊照片效果</a>&#160 <a href="#list5">5.濾鏡-模糊效果</a> &#160<a href="#list6">6.濾鏡-飽和度</a>&#160 <a href="#list7">7.濾鏡-色相旋轉</a>&#160 <a href="#list8">8.濾鏡-交互使用</a>
+    
+    <h1 id = "list1">亮度 -webkit-filter:brightness </h1>
+    <img class = "img1"src="img/MonsterTrail.jpg" alt="">
+    <a href="#p1">最上頁</a>
+    <h1 id = "list2">反轉 -webkit-filter: invert</h1>
+    <img class = "img2"src="img/MonsterTrail.jpg" alt="">
+    <a href="#p1">最上頁</a>
+    <h1 id = "list3">對比 -webkit-filter: contrast</h1>
+    <img class = "img3"src="img/MonsterTrail.jpg" alt="">
+    <a href="#p1">最上頁</a>
+    <h1 id = "list4">舊照片效果 -webkit-filter: swpia</h1>
+    <img class = "img4"src="img/MonsterTrail.jpg" alt="">
+    <a href="#p1">最上頁</a>
+    <h1 id = "list5">模糊效果 -webkit-filter:blur</h1>
+    <img class = "img5"src="img/MonsterTrail.jpg" alt="">
+    <a href="#p1">最上頁</a>
+    <h1 id = "list6">飽和度 -webkit-filter:saturate</h1>
+    <img class="img6"src="img/MonsterTrail.jpg" alt="">
+    <a href="#p1">最上頁</a>
+    <h1 id = "list7">色相旋轉</h1>
+    <img class = "img7"src="img/MonsterTrail.jpg" alt="">
+    <a href="#p1">最上頁</a>
+    <h1 id = "list8">濾鏡交互使用</h1>
+    <img class = "img8"src="img/MonsterTrail.jpg" alt="">
+    <a href="#p1">最上頁</a>
+    
+</body>
+</html>
